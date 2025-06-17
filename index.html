@@ -10,64 +10,15 @@
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="https://unpkg.com/vuex"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js'></script>
+  <!--<script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.js'></script>-->
   <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
-    <script>
-    // Adobe Target pre-hiding code snippet 
-    ;(function(win, doc, style) {
-      var STYLE_ID = 'at-body-style';
-      
-      function getParent() {
-        return doc.getElementsByTagName('head')[0];
-      }
-      
-      function addStyle(parent, id, def) {
-        if (!parent) {
-          return;
-        }
-        
-        var style = doc.createElement('style');
-        style.id = id;
-        style.innerHTML = def;
-        parent.appendChild(style);
-      }
-      
-      function removeStyle(parent, id) {
-        if (!parent) {
-          return;
-        }
-        
-        var style = doc.getElementById(id);
-        
-        if (!style) {
-          return;
-        }
-        
-        parent.removeChild(style);
-      }
-      
-      addStyle(getParent(), STYLE_ID, style);
-      removeStyle(getParent(), STYLE_ID);
-    }(window, document, "body {opacity: 0 !important}"));
-    </script>
-    <script>
-    // advertisment mock
-    const initAd = () => {
-      const adSpace = document.querySelector('.main__advertising');
-      const gif = '<div style="width:400px;max-width:100%;"><div style="height:0;padding-bottom:52.4%;position:relative;"><iframe width="500" height="262" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameBorder="0" src="https://imgflip.com/embed/6wy03z"></iframe></div></div>';
-      adSpace.innerHTML = gif
-    };
-    window.addEventListener('load', () => {
-      initAd();
-    });
-    </script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="http://slowfil.es/file?type=css&sync-in-head" />
   <link rel="stylesheet" href="styles/index.css" />
   <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
   <link rel="preload" href="background.jpg" as="image">
-  <link rel="preload" href="fonts/alegreya-v29-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <!--<link rel="preload" href="fonts/alegreya-v29-latin-regular.woff2" as="font" type="font/woff2" crossorigin>-->
   <link rel="preload" href="fonts/alegreya-v29-latin-900.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" type="text/css" href="styles/mobile.css">
 </head>
@@ -194,5 +145,7 @@
       <div class="footer__sponsor">Powered by <a href="https://www.netcentric.biz/">Cognizant Netcentric</a></div>
     </div>
   </div>
-  <script src="script/app.js"></script>
+  <script defer src="script/app.js"></script>
+  <script defer src="script/at.js"></script>
+  <script defer src="script/am.js"></script>
 </body>
