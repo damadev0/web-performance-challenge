@@ -24,10 +24,6 @@ body {
   grid-row-gap: 10px;
 }
 
-.main__carousel {
-  position: relative;
-}
-
 .main__content img {
   width: 100%;
 }

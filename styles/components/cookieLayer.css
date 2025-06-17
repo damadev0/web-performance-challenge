@@ -11,10 +11,6 @@
   box-shadow: 0 5px 3px -2px #e4e4e4
 }
 
-.cookieLayer__base--hidden {
-  display: none;
-}
-
 .cookieLayer__title {
   font-size: 35px;
   margin-bottom: 30px;
